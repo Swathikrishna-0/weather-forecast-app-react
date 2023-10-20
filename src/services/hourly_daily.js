@@ -1,4 +1,6 @@
 const formatForecastWeather = async (lat, lon) => {
+  // console.log(lat,"latitiude")
+  // console.log(lon,"longitude")
   const url1 = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=50c0ca57c0208364f266c848e9b59dd8`;
 
   const data1 = await fetch(url1).then((res) => res.json());
@@ -36,8 +38,8 @@ const formatForecastWeather = async (lat, lon) => {
       };
     });
 
-  // console.log(hourly)
-
+  console.log(hourly,"hourly")
+  console.log(daily,"daily")
   return { daily, hourly };
 };
 

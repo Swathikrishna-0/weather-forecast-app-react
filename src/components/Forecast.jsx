@@ -4,6 +4,13 @@ import { iconUrlFromCode } from "../services/weatherService";
 
 function Forecast({ title, items }) {
   // console.log(items);
+  // const withTax = items?.map((item) => {
+  //   // const tem = item.temp - 273
+  //   return item.temp - 273
+  // });
+  // console.log(withTax,"temppppppp")
+  
+
   return (
     <div>
       <div className="flex items-center justify-start mt-6">

@@ -4,6 +4,7 @@ import { toast } from "react-toastify";
 
 function Inputs({ setQuery, units, setUnits }) {
   const [city, setCity] = useState("");
+  console.log(units,"units")
 
   const handleSearchClick = () => {
     if (city !== "") setQuery({ q: city });

@@ -29,7 +29,7 @@ export default function TopButtons({ setQuery }) {
       {cities.map((city) => (
         <button
           key={city.id}
-          className="text-white  font-bold drop-shadow-2xl shadow-black text-lg py-2 px-4 transition ease-out hover:text-sky-400 "
+          className="text-white  font-bold drop-shadow-2xl shadow-black text-lg py-2 px-4 transition ease-out hover:scale-120"
           onClick={() => setQuery({ q: city.title })}
         >
           {city.title}
