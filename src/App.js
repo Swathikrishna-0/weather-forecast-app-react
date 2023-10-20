@@ -34,7 +34,7 @@ function App() {
   useEffect(() => {
     fetchWeather();
     // fetchWeather();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [query, units]);
 
   // console.log(weather2.daily);
@@ -53,18 +53,17 @@ function App() {
   return (
     <>
       <div
-        className={`bg-cover bg-center-center bg-no-repeat grid p-16 main-div ${formatBackground()}`}
-        style={{ height:"100vh",width:"100vw" }}
+        className={`bg-cover bg-center-center bg-no-repeat grid p-16 main-div ${formatBackground()} main-card`}
       >
         <div
           className={
             "weather-card grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 max-w-100 mx-auto mt-auto mb-auto py-6 px-32 bg-white bg-opacity-5 backdrop-blur-lg rounded drop-shadow-lg"
           }
-          style={{borderRadius:"50px"}}
+          style={{ borderRadius: "50px" }}
           id="form"
         >
           <TopButtons setQuery={setQuery} />
-          <Inputs setQuery={setQuery} units={units} setUnits={setUnits}/>
+          <Inputs setQuery={setQuery} units={units} setUnits={setUnits} />
 
           {weather && (
             <div>
