@@ -22,7 +22,9 @@
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "ESLint_NO_DEV_ERRORS=1 eslint ."
+   
   },
   "eslintConfig": {
     "extends": [
